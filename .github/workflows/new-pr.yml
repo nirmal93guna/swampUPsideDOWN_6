@@ -34,6 +34,7 @@ jobs:
         echo "Send run log"
         curl --connect-timeout 2 -sSf -k -u "$USER:$PW" $URL/api/run/audit
         
+        
     - name: send_slack_alert
       continue-on-error: true
       env:
